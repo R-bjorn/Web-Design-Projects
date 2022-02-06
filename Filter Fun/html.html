@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter Fun</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="js.js"></script>
+	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+<body>
+	<header>
+		<h1> Filter Fun </h1>
+	</header>
+	<div id="container">
+		<div class="contain">
+			<div id="resize">
+				<p>Width <input type="text" id="width" onkeypress="setWidth(this.value)"/></p>
+				<p>Height <input type="text" id="height" onkeypress="setHeight(this.value)"/></p><br><br>
+			</div>
+			
+			<canvas id="canvasImage"></canvas>
+			<br><br>
+			<div id="loadImage">
+				<h2>Load Image </h2>
+				<input  id="imageFile" type="file" multiple="false" accept="image/*" onchange="imgtoCanvas()">
+			</div>
+		</div>
+		
+		<div id="filters">
+			<h2>Choose Filters </h2>
+
+			<input type="button" value="Red" onclick="makeRed()" style="background-color: rgb(255,85,85);" />
+			<input type="button" value="Gray" onclick="makeGray()" style="background-color: rgb(127,127,127);" />
+			<input type="button" value="Rainbow" onclick="makeRainbow()" style="background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); color: #fff;"/>
+			<input type="button" value="Red Hue Filter" onclick="makeRedHue()" style="background-color: rgb(255,0,0);"/>
+			<input type="button" value="Border" onclick="makeBorder()" style="border: 10px solid #000;"/>
+			<input type="button" value="Multiple Windows" onclick="makeWindows()" style=""/>
+			<!-- <input type="button" value="Blur" onclick="makeBlue()"/> -->
+
+
+			<br><br>
+			<div class="trans">
+				<p>Transparency <input type="range" min="0" max="255" value="0" oninput="makeTransparent(this.value)"/> <output id="scale">0</output></p>
+			</div>
+			<br><br>
+			<input type="button" value="Reset Image" onclick="reset()">
+		</div>
+	</div>
+</body>
+</html>
