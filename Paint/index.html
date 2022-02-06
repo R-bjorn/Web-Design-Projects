@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paint - Ravi</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<script src="index.js"></script>
+<body>
+	<header><h1>Paint Your Own Picture </h1></header>
+
+	<div class="container">
+		<p>Set Width  <input type="text" id="width" value=""></p>
+<p>Set Heigth <input type="text" id="height" value=""></p>
+<input type="button" onclick="change()" value="Change">
+
+<br><br>
+<canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX,event.offsetY)" onmouseup="endPaint()"></canvas> <br>
+
+<p> Brush Color : <input type="color" onchange="changeColor(this.value)" value=""  id="colorPicker"/></p>
+<p> Brush Size : <input type="range" min="1" max="50" value="50" oninput="resizeBrush(this.value)"/> <output id="sizeOutput">50</output></p>
+<br><br>
+
+<input type="button" value="Clear Canvas" onclick="clearCanvas()">
+
+	</div>
+
+</body>
+</html>
