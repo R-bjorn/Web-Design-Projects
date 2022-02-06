@@ -1,0 +1,15 @@
+#fg_canvas,
+#bg_canvas {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #c2c2c2;
+  margin-right: 15px;
+}
+
+body {
+  background-color: #fee3b9;
+}
+
+#makenormal {
+  display: none;
+}

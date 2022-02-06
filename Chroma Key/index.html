@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chroma Key - Ravi</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="index.js"></script>
+<body>
+	<header> <h1>Green Screen Web Page</h1></header>   
+   
+	<div class="container">
+		<div id="canvas">
+            <canvas id="fg_canvas"></canvas>
+            <canvas id="bg_canvas"></canvas>
+            <br><br>
+            <lable>Foregroud :</lable>
+            <input id="fgimage" type="file" multiple="false" accept="image/*" onchange="upload_fg()"><br><br>
+            <lable>Backgroud :</lable>
+            <input id="bgimage" type="file" multiple="false" accept="image/*" onchange="upload_bg()"><br><br>
+            <input id="concate" type="button" onclick="greenScreen()" value="Create Composotion">
+            <input id="clear" type="button" onclick="clearCanvas()" value="Clear Canvas">
+		</div>
+
+	</div>
+
+</body>
+</html>
