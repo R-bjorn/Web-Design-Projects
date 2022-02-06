@@ -1,0 +1,12 @@
+#canvas1 {
+  border: 1px solid #c6c6c6;
+}
+
+p {
+  display: inline;
+  margin: 5px;
+}
+
+body {
+  background-color: white;
+}
