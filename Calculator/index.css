@@ -1,0 +1,111 @@
+body{
+	margin:0 auto;
+	justify-content: center;
+	text-align: center;
+	font-family: arial;
+}
+
+.container {
+	margin : 0 auto;
+	text-align: center;
+	border: 5px solid #ddd;
+	border-radius: 15px;
+	max-width: 600px;
+}
+
+/*Screen Of Calculator*/
+#screen-cal {
+	border: 3px solid #000;
+	width: 470px;
+	height: 95px;
+	margin: 15px auto;
+}
+
+#screentext {
+  text-align: right;
+  color : gray;
+  margin-bottom : 2px;
+  margin-right:18px;
+  width : 444px;
+/*   border: 1px solid #000; */
+  border : 0;
+}
+
+#screen-cal #screen{
+	width: 440px;
+	height: 70px;
+	border: 0;
+	margin: 0 auto;
+	justify-content: center;
+/*   border : 1px solid #000; */
+  
+  font-size: 50px;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 5px;
+}
+
+#screen-cal #screen-op {
+	width: 10px;
+  font-size:15px;
+  vertical-align : top;
+	border: 0;
+}
+/*End*/
+
+/*Type Area css*/
+.typearea-cal {
+	display: flex;
+}
+
+#clear-cal {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+#clear-cal input {
+	padding : 20px;
+	margin : 0 24px;
+}
+
+.clr {
+  width:150px;
+}
+
+.mod {
+  
+}
+
+#digits-cal {
+	background-color: #d4d4d4;
+	back
+}
+
+.button-cal {
+	width : 150px;
+	display: inline-block;
+/* 	border: 2px solid #000; */
+}
+
+.button-cal input {
+  width : 140px;
+  padding: 30px 20px;
+	margin:5px;
+	box-sizing: border-box;
+}
+
+.operation-cal {
+	width: 40%;
+}
+
+.op-cal {
+	width: 100px;
+	display: block;
+}
+
+.op-cal input{
+	padding: 20px;
+	margin:5px;
+	box-sizing: border-box;
+}
