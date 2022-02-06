@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator - Ravi</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<script src="index.js"></script>
+<body>
+	<header><h1>This is Calculator Try : 1</h1></header>
+
+	<div class="container">
+		<div id="screen-cal">
+      		<input type="text" value="" id="screentext"/>
+		  	<input type="text" value="" id="screen"/>
+      		<input type="text" value="" id="screen-op"/>
+		</div>
+		<div id="clear-cal">
+		    <div class="claer"><input id="mod" type="button" value="%" onclick="typeMod()"/></div>
+		    <div class="claer"><input class="clr" type="button" value="CE" onclick="typeClearNumber()"/></div>
+		    <div class="claer"><input class="clr" type="button" value="C" onclick="typeClear()"/></div>
+		    <div class="claer"><input type="button" value="X" onclick="typeBack()"/></div>
+		</div>
+		<div class="typearea-cal">
+			<div id="digits-cal">
+				<div class="button-cal"><input id="1" type="button" value="1" ></div>
+				<div class="button-cal"><input id="2" type="button" value="2" ></div>
+				<div class="button-cal"><input id="3" type="button" value="3" onclick="type3()"></div>
+				<div class="button-cal"><input id="4" type="button" value="4" onclick="type4()"></div>
+				<div class="button-cal"><input id="5" type="button" value="5" onclick="type5()"></div>
+				<div class="button-cal"><input id="6" type="button" value="6" onclick="type6()"></div>
+				<div class="button-cal"><input id="7" type="button" value="7" onclick="type7()"></div>
+				<div class="button-cal"><input id="8" type="button" value="8" onclick="type8()"></div>
+				<div class="button-cal"><input id="9" type="button" value="9" onclick="type9()"></div>
+				<div class="button-cal"><input id="0" type="button" value="0" onclick="type0()"></div>
+			</div>
+
+			<div class="operation-cal">
+				<div class="op-cal"><input type="button" value="+" onclick="typeplus()"/></div>
+        <div class="op-cal"><input type="button" value="-" onclick="typesub()"/></div>
+				<div class="op-cal"><input type="button" value="*" onclick="typemul()"/></div>
+				<div class="op-cal"><input type="button" value="/" onclick="typediv()"/></div>
+        <div class="op-cal"><input type="button" value="=" onclick="typeans()"/></div>
+			</di>
+		</div>
+
+	</div>
+
+</body>
+</html>
