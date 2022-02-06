@@ -1,0 +1,51 @@
+body{
+	margin:0 auto;
+	padding:0;
+	font-family: Garamond;
+}
+
+#container {
+	padding : 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+#container div{
+	margin: 10px;
+	padding : 25px;
+}
+
+#filters {
+	background-color: #d4d4d4;
+}
+
+#filters input{
+	padding: 20px;
+	margin : 15px;
+	display: block;
+	border-radius: 5px;
+}
+
+header{
+	background-color: #d4d4d4;
+	margin : 15px 0;
+	padding: 25px;
+	text-align: center;
+}
+
+
+header h1{
+	margin:0;
+}
+
+#canvasImage {
+  border:1px solid #C6C6C6;
+  width : 500px;
+  height:400px;
+}
+
+p{
+  display:inline;
+  margin-right: 15px ;
+}
